@@ -352,7 +352,7 @@ With Elm Land, you can mix and match dynamic parameters with your catch-all file
 
 Page filename | URL
 :-- | :--
-`src/Pages/:User/:Repo/Blob/:Branch/Tree/ALL_.elm`  | `/:user/:repo/tree/:branch/*`
+`src/Pages/:User/:Repo/Tree/:Branch/ALL_.elm`  | `/:user/:repo/tree/:branch/*`
 
 
 ```elm
