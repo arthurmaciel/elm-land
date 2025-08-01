@@ -206,7 +206,7 @@ Here are some highlights from the code snippet above:
 1. __On line 8__, we appended `" | My app"` to the end of whatever `title` came in from the content in this layout.
     - Let's imagine that our `Page.Settings` file is using this sidebar layout.
     - If the `Page.Settings.view` function returned the title `"Settings"`, we would see `"Settings | My app"` as the tab title displayed for this page. 
-1. __On line 12__, we used the `toContentMsg` function along with to `Html.map`. This converts the `Html Msg` value returned by `viewSidebar` into the expected `Html contentMsg` value our `view` function needs to return.
+1. __On line 12__, we used the `toContentMsg` function along with `Html.map`. This converts the `Html Msg` value returned by `viewSidebar` into the expected `Html contentMsg` value our `view` function needs to return.
 1. __On line 14__, we embedded the HTML content from our page into a `<div class="page">` tag.
     - If we were on the `Settings` page, then `content.body` would be the exact HTML content returned by the `Page.Settings.view` function.
 1. __On line 18__, we use a capitalized `Msg` type in the HTML value we returned. This means our `viewSidebar` can send messages in this function, which is important for interactive layouts!
